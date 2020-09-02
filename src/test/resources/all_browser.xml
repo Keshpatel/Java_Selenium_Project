@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="My Social Media Test Suit" thread-count="3"
+	parallel="tests" verbose="4">
+
+	<test name="Google test - chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="app.tests.GoogleTest" />
+		</classes>
+	</test>
+	<test name="Google test - firefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="app.tests.GoogleTest" />
+		</classes>
+	</test>
+	<test name="Google test - edge">
+		<parameter name="browser" value="edge" />
+		<classes>
+			<class name="app.tests.GoogleTest" />
+		</classes>
+	</test>
+
+
+
+	<test name="Fresh Works test - chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="app.tests.FreshWorkTest" />
+		</classes>
+	</test>
+	<test name="Fresh Works test - firefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="app.tests.FreshWorkTest" />
+		</classes>
+	</test>
+
+	<test name="Fresh Works test - edge">
+		<parameter name="browser" value="edge" />
+		<classes>
+			<class name="app.tests.FreshWorkTest" />
+		</classes>
+	</test>
+
+
+
+
+
+	<test name="Redif Mail test- chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="app.tests.RedifMailTest" />
+		</classes>
+	</test>
+	<test name="Redif Mail test - firefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="app.tests.RedifMailTest" />
+		</classes>
+	</test>
+	<test name="Redif Mail test - edge">
+	<parameter name="browser" value="edge" />
+		<classes>
+			<class name="app.tests.RedifMailTest" />
+		</classes>
+	</test>
+	
+	
+	
+</suite>
